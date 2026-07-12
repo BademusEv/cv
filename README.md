@@ -1,85 +1,77 @@
 # Vadim Evteev
 
-**Senior Java Engineer / Lead Backend Engineer**
+**Senior Java Backend Engineer**
 
-evteewadim@gmail.com · [linkedin.com/in/evteevvadim](https://linkedin.com/in/evteevvadim) · [t.me/vadimevteev](https://t.me/vadimevteev) · Remote / Relocation
+evteewadim@gmail.com · [linkedin.com/in/evteevvadim](https://linkedin.com/in/evteevvadim) · [t.me/vadimevteev](https://t.me/vadimevteev)<br>
+Remote B2B contracts · Available across UTC+4 to UTC+8 · Open to relocation
 
 ## About
 
-Senior Java Engineer with 7+ years of experience designing and building high-scale distributed systems (300+ RPS, 48ms P99 latency) in FinTech, AdTech, and E-commerce. Deep expertise in Java, Spring Boot, Kafka, and event-driven microservice architecture. Designed fault-tolerant systems from architecture to production: Kafka exactly-once pipelines, zero-downtime legacy migrations, reactive low-latency platforms. Proven track record of legacy system takeover — auditing architecture, identifying technical debt, and driving improvement plans. AI-assisted development practitioner: builds and ships AI-integrated backend products. Experience leading engineering teams of up to 6 engineers and making architectural decisions in cross-functional teams. Seeking Senior Java or Lead Backend Engineering opportunities in high-scale product companies.
+Senior Java Backend Engineer with 7+ years of experience building and modernizing distributed systems in FinTech and AdTech. Led a C#-to-Java service migration that increased throughput from 350 to 1,400 RPS in load tests. Periodically covered selected Team Lead responsibilities based on team workload. Hands-on with Java, Spring Boot, Kafka, PostgreSQL, Redis, Kubernetes, performance optimization, and observability. Since 2025, I have also built backend prototypes with LLM integrations, including a Java backend for an AI-assisted contact CRM. Open to remote Senior Java Backend roles, including B2B contracts.
 
 ## Work Experience
 
-### Senior Java Engineer | Freelance / Independent Contractor | Aug 2025 — Present
+### Independent Backend Engineer | Client and Product Prototypes | Aug 2025 — Present
 
-- Built an AI CRM for contact management: voice input transcribed via Whisper, automated contact profile enrichment via GPT-4o, follow-up recommendation generation.
-- Implemented prompt-injection protection (system-prompt priority) and hallucination control — engine output as ground truth, confidence scoring, optional second-model verification.
-- Designed an educational chess platform with AI trainer: Stockfish wrapper for ground-truth analysis + LLM move explanations; intelligent model routing between Claude and GPT via OpenRouter with token-budget-based model downgrade.
-- Built a payment Telegram bot for EdTech businesses: integrated with the LavaTop payment system, automated subscription management in private channels via Webhook and REST API.
-- Designed the technical architecture of a multi-agent AI platform for a startup — orchestration of product, design, and engineering roles with automated testing.
+- Built a Java backend prototype for a contact-management CRM, integrating Whisper voice transcription and GPT-4o-based extraction of structured contact data.
+- Developed a client prototype for an online-education subscription service, integrating LavaTop webhooks and REST API with a Telegram bot to automate payment-based access to private channels.
+- Built a chess-training prototype combining deterministic Stockfish analysis with LLM-generated explanations and model routing through OpenRouter.
+- Designed the prototype architecture of a multi-agent startup platform, covering the orchestration of product, design, and engineering roles and automated testing workflows.
 
 **Stack:** Java, Python, PostgreSQL, Docker, GPT-4o, Claude API, OpenRouter, Whisper, Telegram Bot API, CI/CD
 
 ### Senior Software Engineer | LINEATE (AdTech) | Jun 2024 — Aug 2025
 
-- Took over a legacy C# service as technical owner: audited the architecture and code, identified critical technical debt (N+1 query problems, missing distributed caching), and drove the prioritized improvement plan.
-- Led complete architectural migration of the legacy C# landing service to a reactive Java ecosystem (Spring WebFlux) targeting 10x load growth — achieved 4x throughput improvement under load testing, zero downtime via Blue-Green deployment.
-- Served as Acting Technical Lead for a team of 4–6 engineers: technical leadership, delivery ownership, team coordination, zero-downtime rollout management via ArgoCD.
-- Made key architectural decisions: REST over gRPC based on observability and migration cost; centralized Redis full-response cache over per-instance in-memory — significantly reduced database load.
-- Resolved N+1-style chained-request problems by introducing GraphQL; increased parallel-processing throughput with Virtual Threads.
-- Designed safe deployment strategies across regions (Blue-Green, Rolling Update, Feature Flag) via ArgoCD — zero-downtime releases for high-scale ad systems.
-- Developed and maintained reactive cloud-native low-latency services: 300+ RPS per pod, 48ms P99, Spring WebFlux + Project Reactor.
-- Eliminated GC pressure and memory hotspots through profiling; performed JVM tuning for stable operation under load.
+- Periodically covered for the Team Lead of a 4–6 engineer team, taking ownership of selected responsibilities depending on workload, including technical coordination, architectural decisions, and rollout planning.
+- Led the migration of a legacy C# landing service to Java and Spring WebFlux. The target architecture was designed for an expected 10x increase in both request rate and JSON payload volume; load tests confirmed a 4x throughput increase from 350 to 1,400 RPS.
+- Performed the migration and operated the service across two regions and eight pods; production performance reached 300+ RPS per pod at 48 ms P99. Designed Blue-Green, Rolling Update, and Feature Flag deployment strategies with ArgoCD.
+- Made the architectural decision to use REST instead of gRPC after analyzing migration cost and observability requirements; introduced centralized Redis full-response caching to reduce database load.
+- Replaced chains of sequential REST requests with a single GraphQL endpoint, reducing client round trips and simplifying frontend integration. Used Virtual Threads separately for a blocking workload to increase concurrency.
+- Eliminated GC pressure and memory hotspots through profiling and JVM tuning.
 
 **Stack:** Java, Spring WebFlux, Project Reactor, Kafka, PostgreSQL, Redis, Docker, Kubernetes, ArgoCD, Prometheus, Grafana, CI/CD
 
-### Software Engineer | EPAM Systems (GoDaddy) | Jul 2022 — Jun 2024
+### Software Engineer | EPAM Systems — GoDaddy | Jul 2022 — Jun 2024
 
-- Designed and built a distributed microservice ecosystem (6+ services) under production load.
-- Reduced P99 latency from ~150ms to ~60ms (-60%) per APM data — by eliminating N+1 ORM bottlenecks and optimizing data-fetching patterns.
-- Improved critical SQL query performance by 40% through database schema redesign and targeted indexing strategy.
-- Implemented Kafka-based async communication for scalable event-driven architecture.
-- Implemented SpEL-based data filtering and a caching layer, significantly increasing request throughput.
-- Improved observability via ELK stack integration — reduced MTTD and accelerated incident response.
-- Decomposed and migrated critical modules of a legacy C# service to Java microservices, improving maintainability and performance.
+- Designed and developed a distributed ecosystem of 6+ Java services under production load.
+- Reduced P99 latency from approximately 150 ms to 60 ms (60%) by eliminating N+1 ORM bottlenecks and optimizing data-fetching patterns.
+- Improved critical SQL query performance by 40% through schema changes and targeted indexing.
+- Introduced Kafka-based asynchronous communication and improved observability with ELK and OpenTelemetry, reducing detection and incident investigation time.
+- Decomposed and migrated critical modules from a legacy C# service to maintainable Java microservices.
 
-**Stack:** Java 11–17, Spring Boot, Spring MVC, Spring Cloud, DynamoDB, AWS, Elasticsearch, Kafka, Docker, Kubernetes, OpenTelemetry, MapStruct, JWT, SonarQube, Jenkins, GitHub Actions
+**Stack:** Java 11–17, Spring Boot, Spring MVC, Spring Cloud, DynamoDB, AWS, Elasticsearch, Kafka, Docker, Kubernetes, OpenTelemetry, JWT, SonarQube, Jenkins, GitHub Actions
 
 ### Chief Software Engineer | SBERBANK (FinTech) | Sep 2021 — Jun 2022
 
-- Designed distributed processes for payroll card issuance stages, ensuring data correctness and consistency.
-- Built Kafka pipelines with strict message ordering, exactly-once processing semantics, and idempotent consumer handlers — preventing duplicate transaction processing.
-- Implemented idempotency mechanisms and retry logic between services.
-- Developed a reusable audit library on Spring AOP — deployed across all team services (4+), eliminating audit logic duplication and providing a unified compliance trail.
-- Mentored junior engineers on architectural decisions, distributed systems patterns, and clean-code practices.
-- Integrated heterogeneous services via REST and SOAP; developed REST APIs with schema migration management via Liquibase.
+- Designed distributed workflows for payroll card issuance, ensuring data consistency across processing stages.
+- Implemented Kafka transactions with transactional producers and offset commits, together with idempotent consumers and outbox handling for database side effects; preserved strict ordering and prevented duplicate processing in card-issuance workflows.
+- Built a reusable audit library with Spring AOP, adopted across 4+ team services to provide a unified compliance trail and remove duplicated audit logic.
+- Integrated heterogeneous services through REST and SOAP and managed database schema migrations with Liquibase.
+- Mentored junior engineers on distributed-systems patterns, architectural decisions, and clean-code practices.
 
 **Stack:** Java 8/11, Spring Boot, Spring Data, AOP, Hibernate, Liquibase, Apache Kafka, PostgreSQL, OpenShift, Docker, Maven, JUnit, Mockito, SonarQube, Jenkins
 
 ### Java Software Engineer | Reliability Technologies (FinTech / HealthTech) | Oct 2018 — Aug 2021
 
-- Developed backend services and REST APIs for mobile and web CRM applications for corporate banking clients (Bank Otkritie) — APIs and data models optimized for mobile: minimized payload, fast client-server round-trip.
-- Designed microservice architecture and data models from scratch; implemented RabbitMQ-based messaging between services.
-- Automated deployment and quality assurance processes by configuring CI/CD pipelines (Jenkins, SonarQube); participated in code reviews and legacy system quality improvement.
+- Developed backend services and REST APIs for mobile and web CRM applications used by corporate banking clients, including Bank Otkritie.
+- Designed microservice architecture and data models from scratch and implemented RabbitMQ-based messaging between services.
+- Automated deployment and quality controls with Jenkins and SonarQube and contributed to code reviews and legacy-system improvements.
 
 **Stack:** Java 8, Spring Boot, Spring AOP, RabbitMQ, PostgreSQL, MySQL, Docker, Jenkins, Swagger, Git, SonarQube
 
 ## Skills
 
-- **Languages:** Java (8–21), Kotlin, Python, JavaScript, SQL
-- **JVM & Concurrency:** JVM Internals, Java Concurrency, GC Tuning, Lock-free Design
+- **Java:** Java 8–21, concurrency, Virtual Threads, JVM profiling, GC tuning
 - **Frameworks:** Spring Boot, Spring WebFlux, Spring MVC, Spring Data, Spring Security, Spring AOP, Hibernate, Liquibase
-- **Databases:** PostgreSQL, MySQL, DynamoDB, Redis, Elasticsearch, Supabase
-- **Messaging:** Apache Kafka (exactly-once, ordering, partitioning), RabbitMQ
-- **DevOps & Cloud:** Docker, Kubernetes, OpenShift, AWS, ArgoCD, CI/CD (Jenkins, GitHub Actions), Prometheus, Grafana
-- **Key Patterns:** Distributed Transactions, Idempotency, Exactly-once Delivery, Failure Handling, CQRS, Event-Driven, High-Availability, Legacy Takeover & Migration
-- **API & Testing:** REST, gRPC, SOAP, GraphQL, OpenAPI/Swagger, Mobile Backend APIs, JUnit 5, Mockito, Load Testing
-- **AI Integrations:** Claude API, GPT-4o, OpenRouter, Whisper, AI Agent Workflows, Prompt Engineering, Hallucination Control
-- **AI-Assisted Dev:** Claude Code, ChatGPT, Gemini — actively used in engineering workflow
+- **Data and Messaging:** PostgreSQL, MySQL, DynamoDB, Redis, Elasticsearch, Apache Kafka, RabbitMQ
+- **Cloud and Delivery:** AWS, Docker, Kubernetes, OpenShift, ArgoCD, Jenkins, GitHub Actions, Prometheus, Grafana, OpenTelemetry
+- **Architecture and APIs:** Distributed systems, event-driven architecture, idempotency, failure handling, REST, SOAP, GraphQL, gRPC, OpenAPI
+- **Testing:** JUnit 5, Mockito, integration and load testing, SonarQube
+- **AI Integrations:** Python, GPT-4o, Claude API, OpenRouter, Whisper, structured LLM outputs, model routing
 
 ## Education
 
-**Belgorod State University** — Master's Degree, Information Systems and Technologies, 2020
+**Belgorod State University** — Master's Degree in Information Systems and Technologies, 2020<br>
 Institute of Engineering and Digital Technologies
 
 ## Languages
