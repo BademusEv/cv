@@ -15,6 +15,7 @@ Senior Java Backend Engineer with 7+ years of experience building and modernizin
 
 - Architected and built **Business Honest**, a CRM for a business school, with a React portal, Fastify/PostgreSQL core, server-side authentication and RBAC, client and call histories, background jobs, and an auditable error log.
 - Integrated Zoom Server-to-Server OAuth, signed webhooks, transcripts, and AI Companion summaries; implemented AI classification plus on-demand, versioned follow-up and sales-call preparation drafts through OpenRouter, with Telegram delivery and Google Drive adapters.
+- Implemented a Retrieval-Augmented Generation (RAG) pipeline for follow-up generation over a versioned PostgreSQL knowledge base, combining deterministic SQL retrieval, PostgreSQL Full-Text Search with Russian lexeme matching, tag-based scoring, and synonym/alias search. Added code-level grounding guardrails to keep tariffs, cases, modules, and business mechanics tied to verified sources.
 - Built and deployed a multilingual Instagram Direct sales bot for **Bali DJ School** on Cloudflare Workers, TypeScript, Supabase, and OpenRouter. Automated knowledge-base answers, seven-step lead qualification, objection handling, Trial offers, and Telegram handoff, with PGMQ queues, a durable outbox, per-lead concurrency control, bounded retries, and regression tests.
 - Delivered **BuildTrack**, a role-based construction-management platform for the UAE market: a Next.js/TypeScript/Supabase dashboard for clients, contractors, managers, and admins across tenders, contracts, budgets, work reports, payments, files, and notifications; integrated it with a Flask public showcase/admin and a Dockerized two-service deployment.
 
@@ -68,7 +69,7 @@ Senior Java Backend Engineer with 7+ years of experience building and modernizin
 - **Architecture and APIs:** Distributed systems, event-driven architecture, idempotency, failure handling, REST, SOAP, GraphQL, gRPC, OpenAPI
 - **Testing:** JUnit 5, Mockito, integration and load testing, SonarQube
 - **Additional Product Stack:** TypeScript, Node.js, Fastify, React, Next.js, Cloudflare Workers, Supabase, Python, Flask
-- **AI and Product Integrations:** OpenRouter, GPT-4o, Claude API, Whisper, structured LLM outputs, knowledge-base orchestration, Zoom API, Instagram Graph API, Telegram Bot API, Google Drive API
+- **AI and Product Integrations:** Retrieval-Augmented Generation (RAG), prompt engineering, LLM guardrails, structured LLM outputs, knowledge-base orchestration, OpenRouter, GPT-4o, Claude API, Whisper, Zoom API, Instagram Graph API, Telegram Bot API, Google Drive API
 
 ## Education
 
