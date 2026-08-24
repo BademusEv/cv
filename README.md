@@ -15,6 +15,7 @@ Senior Java Backend Engineer с 7+ годами опыта разработки 
 
 - Спроектировал и разработал **Business Honest** — CRM для бизнес-школы с React-порталом, core-сервисом на Fastify/PostgreSQL, серверной аутентификацией и RBAC, историей клиентов и созвонов, фоновыми задачами и журналом ошибок.
 - Интегрировал Zoom Server-to-Server OAuth, проверку подписей webhook-событий, транскрипции и сводки AI Companion; реализовал AI-классификацию и запуск по явному запросу версионируемых, редактируемых черновиков follow-up и материалов для подготовки к продажам через OpenRouter, с доставкой в Telegram и адаптерами Google Drive.
+- Реализовал RAG-пайплайн (Retrieval-Augmented Generation) для генерации follow-up на основе версионируемой базы знаний в PostgreSQL: детерминированный SQL retrieval, PostgreSQL Full-Text Search с обработкой русских лексем, скоринг по тегам и поиск по синонимам/алиасам. Добавил программные проверки привязки результата к источникам (grounding guardrails), чтобы факты о тарифах, кейсах, модулях и бизнес-механиках попадали в результат только из проверенных источников.
 - Разработал и развернул многоязычного AI-бота первой линии для Instagram Direct школы **Bali DJ School** на Cloudflare Workers, TypeScript, Supabase и OpenRouter. Автоматизировал ответы на основе базы знаний, семишаговую квалификацию лидов, работу с возражениями, предложение Trial-занятий и передачу менеджеру в Telegram; реализовал PGMQ-очереди, надёжный outbox, контроль конкурентной обработки одного лида, ограниченные повторы и регрессионные тесты.
 - Разработал **BuildTrack** — ролевую платформу управления строительными проектами для рынка ОАЭ: личный кабинет на Next.js/TypeScript/Supabase для заказчиков, подрядчиков, менеджеров и администраторов с тендерами, договорами, бюджетами, отчётами о работах, платежами, файлами и уведомлениями; интегрировал витрину и админку на Flask и настроил Docker-деплой двух сервисов.
 
@@ -68,7 +69,7 @@ Senior Java Backend Engineer с 7+ годами опыта разработки 
 - **Архитектура и API:** распределённые системы, событийная архитектура, идемпотентность, обработка отказов, REST, SOAP, GraphQL, gRPC, OpenAPI
 - **Тестирование:** JUnit 5, Mockito, интеграционное и нагрузочное тестирование, SonarQube
 - **Дополнительный продуктовый стек:** TypeScript, Node.js, Fastify, React, Next.js, Cloudflare Workers, Supabase, Python, Flask
-- **AI и продуктовые интеграции:** OpenRouter, GPT-4o, Claude API, Whisper, структурированный вывод LLM, оркестрация базы знаний, Zoom API, Instagram Graph API, Telegram Bot API, Google Drive API
+- **AI и продуктовые интеграции:** Retrieval-Augmented Generation (RAG), prompt engineering, LLM guardrails, структурированный вывод LLM, оркестрация базы знаний, OpenRouter, GPT-4o, Claude API, Whisper, Zoom API, Instagram Graph API, Telegram Bot API, Google Drive API
 
 ## Образование
 
