@@ -7,18 +7,18 @@ Remote B2B contracts · Available across UTC+4 to UTC+8 · Open to relocation
 
 ## About
 
-Senior Java Backend Engineer with 7+ years of experience building and modernizing distributed systems in FinTech and AdTech. Led a C#-to-Java service migration that increased throughput from 350 to 1,400 RPS in load tests. Periodically covered selected Team Lead responsibilities based on team workload. Hands-on with Java, Spring Boot, Kafka, PostgreSQL, Redis, Kubernetes, performance optimization, and observability. Since 2025, I have also built backend prototypes with LLM integrations, including a Java backend for an AI-assisted contact CRM. Open to remote Senior Java Backend roles, including B2B contracts.
+Senior Java Backend Engineer with 7+ years of experience building and modernizing distributed systems in FinTech, AdTech, and e-commerce. Led a C#-to-Java service migration that increased throughput from 350 to 1,400 RPS in load tests. Periodically covered selected Team Lead responsibilities based on team workload. Hands-on with Java, Spring Boot, Kafka, PostgreSQL, Redis, Kubernetes, performance optimization, and observability. Since 2025, I have also delivered end-to-end client products and AI automations, including an Instagram Direct sales bot, a Zoom-connected CRM with LLM-assisted follow-up and call preparation, and a construction-management platform for the UAE market. Open to remote Senior Java Backend roles, including B2B contracts.
 
 ## Work Experience
 
-### Independent Backend Engineer | Client and Product Prototypes | Aug 2025 — Present
+### Independent Software Engineer | Client Products and AI Automation | Aug 2025 — Present
 
-- Built a Java backend prototype for a contact-management CRM, integrating Whisper voice transcription and GPT-4o-based extraction of structured contact data.
-- Developed a client prototype for an online-education subscription service, integrating LavaTop webhooks and REST API with a Telegram bot to automate payment-based access to private channels.
-- Built a chess-training prototype combining deterministic Stockfish analysis with LLM-generated explanations and model routing through OpenRouter.
-- Designed the prototype architecture of a multi-agent startup platform, covering the orchestration of product, design, and engineering roles and automated testing workflows.
+- Architected and built **Business Honest**, a CRM for a business school, with a React portal, Fastify/PostgreSQL core, server-side authentication and RBAC, client and call histories, background jobs, and an auditable error log.
+- Integrated Zoom Server-to-Server OAuth, signed webhooks, transcripts, and AI Companion summaries; implemented AI classification plus on-demand, versioned follow-up and sales-call preparation drafts through OpenRouter, with Telegram delivery and Google Drive adapters.
+- Built and deployed a multilingual Instagram Direct sales bot for **Bali DJ School** on Cloudflare Workers, TypeScript, Supabase, and OpenRouter. Automated knowledge-base answers, seven-step lead qualification, objection handling, Trial offers, and Telegram handoff, with PGMQ queues, a durable outbox, per-lead concurrency control, bounded retries, and regression tests.
+- Delivered **BuildTrack**, a role-based construction-management platform for the UAE market: a Next.js/TypeScript/Supabase dashboard for clients, contractors, managers, and admins across tenders, contracts, budgets, work reports, payments, files, and notifications; integrated it with a Flask public showcase/admin and a Dockerized two-service deployment.
 
-**Stack:** Java, Python, PostgreSQL, Docker, GPT-4o, Claude API, OpenRouter, Whisper, Telegram Bot API, CI/CD
+**Stack:** TypeScript, Node.js, Python, Fastify, React, Next.js, Cloudflare Workers, Flask, PostgreSQL, Supabase, pg-boss, PGMQ, Docker, OpenRouter, Zoom API, Instagram Graph API, Telegram Bot API, Google Drive API, CI/CD
 
 ### Senior Software Engineer | LINEATE (AdTech) | Jun 2024 — Aug 2025
 
@@ -67,7 +67,8 @@ Senior Java Backend Engineer with 7+ years of experience building and modernizin
 - **Cloud and Delivery:** AWS, Docker, Kubernetes, OpenShift, ArgoCD, Jenkins, GitHub Actions, Prometheus, Grafana, OpenTelemetry
 - **Architecture and APIs:** Distributed systems, event-driven architecture, idempotency, failure handling, REST, SOAP, GraphQL, gRPC, OpenAPI
 - **Testing:** JUnit 5, Mockito, integration and load testing, SonarQube
-- **AI Integrations:** Python, GPT-4o, Claude API, OpenRouter, Whisper, structured LLM outputs, model routing
+- **Additional Product Stack:** TypeScript, Node.js, Fastify, React, Next.js, Cloudflare Workers, Supabase, Python, Flask
+- **AI and Product Integrations:** OpenRouter, GPT-4o, Claude API, Whisper, structured LLM outputs, knowledge-base orchestration, Zoom API, Instagram Graph API, Telegram Bot API, Google Drive API
 
 ## Education
 
