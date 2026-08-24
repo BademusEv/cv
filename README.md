@@ -3,7 +3,7 @@
 **Senior Java Backend Engineer**
 
 evteewadim@gmail.com · [linkedin.com/in/evteevvadim](https://linkedin.com/in/evteevvadim) · [t.me/vadimevteev](https://t.me/vadimevteev)<br>
-Remote B2B contracts · Available across UTC+4 to UTC+8 · Open to relocation
+Remote B2B contracts · Open to relocation
 
 ## About
 
