@@ -7,19 +7,26 @@ Remote B2B contracts · Open to relocation
 
 ## About
 
-Senior Java Backend Engineer with 7+ years of experience building and modernizing distributed systems in FinTech, AdTech, and e-commerce. Led a C#-to-Java service migration that increased throughput from 350 to 1,400 RPS in load tests. Periodically covered selected Team Lead responsibilities based on team workload. Hands-on with Java, Spring Boot, Kafka, PostgreSQL, Redis, Kubernetes, performance optimization, and observability. Since 2025, I have also delivered end-to-end client products and AI automations, including an Instagram Direct sales bot, a Zoom-connected CRM with LLM-assisted follow-up and call preparation, and a construction-management platform for the UAE market. Open to remote Senior Java Backend roles, including B2B contracts.
+Senior Java Backend Engineer with 7+ years of experience building and modernizing distributed systems in FinTech, AdTech, and e-commerce. Core stack: Java 8–21, Spring Boot and WebFlux, Kafka, PostgreSQL, Redis, Kubernetes; focused on backend performance, reliability, and observability.
+
+- Led a C#-to-Java service migration that raised throughput from 350 to 1,400 RPS in load tests and reached 300+ RPS per pod at 48 ms P99 in production.
+- Cut P99 latency from 150 ms to 60 ms in a distributed system of 6+ services; built transactional Kafka processing with idempotent consumers and an outbox for bank card issuance flows.
+- Periodically covered for the Team Lead of a 4–6 engineer team and mentored junior engineers.
+- Since 2025, independently designing and shipping production client products with LLM integrations: RAG, queues, and idempotent webhook pipelines.
+
+Open to remote Senior Java Backend Engineer roles, including B2B contracts.
 
 ## Work Experience
 
 ### Independent Software Engineer | Client Products and AI Automation | Aug 2025 — Present
 
-- Architected and built **Business Honest**, a CRM for a business school, with a React portal, Fastify/PostgreSQL core, server-side authentication and RBAC, client and call histories, background jobs, and an auditable error log.
-- Integrated Zoom Server-to-Server OAuth, signed webhooks, transcripts, and AI Companion summaries; implemented AI classification plus on-demand, versioned follow-up and sales-call preparation drafts through OpenRouter, with Telegram delivery and Google Drive adapters.
-- Implemented a Retrieval-Augmented Generation (RAG) pipeline for follow-up generation over a versioned PostgreSQL knowledge base, combining deterministic SQL retrieval, PostgreSQL Full-Text Search with Russian lexeme matching, tag-based scoring, and synonym/alias search. Added code-level grounding guardrails to keep tariffs, cases, modules, and business mechanics tied to verified sources.
-- Built and deployed a multilingual Instagram Direct sales bot for **Bali DJ School** on Cloudflare Workers, TypeScript, Supabase, and OpenRouter. Automated knowledge-base answers, seven-step lead qualification, objection handling, Trial offers, and Telegram handoff, with PGMQ queues, a durable outbox, per-lead concurrency control, bounded retries, and regression tests.
-- Delivered **BuildTrack**, a role-based construction-management platform for the UAE market: a Next.js/TypeScript/Supabase dashboard for clients, contractors, managers, and admins across tenders, contracts, budgets, work reports, payments, files, and notifications; integrated it with a Flask public showcase/admin and a Dockerized two-service deployment.
+- Architected and built **Business Honest**, a CRM and AI sales-enablement platform for a B2B business school: a Fastify/PostgreSQL core service with server-side authentication and RBAC, client and call histories, background jobs, and an auditable error log; a React portal and a Telegram Mini App where managers handle clients, contacts, and call history from their phones.
+- Integrated Zoom: Server-to-Server OAuth, signed webhook verification, idempotent call synchronization with deduplication of repeated events, transcripts, and AI Companion summaries. Implemented AI call classification and on-demand generation of versioned, editable follow-up drafts and structured preparation briefs for the next sales call through OpenRouter, with Telegram delivery and Google Drive adapters.
+- Implemented a Retrieval-Augmented Generation (RAG) pipeline over a versioned PostgreSQL knowledge base: deterministic SQL retrieval, Full-Text Search with Russian lexeme matching, tag-based scoring, and synonym/alias search. Added code-level source verification of generated claims (grounding guardrails), so facts about tariffs, cases, modules, and business mechanics reach the output only from verified records.
+- Built and deployed a multilingual first-line AI bot for **Bali DJ School**'s Instagram Direct on Cloudflare Workers, TypeScript, Supabase, and OpenRouter: knowledge-base answers, seven-step lead qualification, objection handling, and Telegram handoff to a manager. Made it reliable with PGMQ queues, a durable outbox, per-lead concurrency control, bounded retries, and regression tests.
+- Delivered **BuildTrack**, a role-based construction-management platform for the UAE market on Next.js/TypeScript/Supabase: dashboards for clients, contractors, managers, and admins covering tenders, contracts, budgets, work reports, payments, and notifications; integrated a Flask public showcase and admin, and set up a Dockerized two-service deployment.
 
-**Stack:** TypeScript, Node.js, Python, Fastify, React, Next.js, Cloudflare Workers, Flask, PostgreSQL, Supabase, pg-boss, PGMQ, Docker, OpenRouter, Zoom API, Instagram Graph API, Telegram Bot API, Google Drive API, CI/CD
+**Stack:** TypeScript, Node.js, Python, Fastify, React, Next.js, Cloudflare Workers, Flask, PostgreSQL, Supabase, pg-boss, PGMQ, Docker, OpenRouter, Zoom API, Instagram Graph API, Telegram Bot API and Mini Apps, Google Drive API, CI/CD
 
 ### Senior Software Engineer | LINEATE (AdTech) | Jun 2024 — Aug 2025
 
@@ -68,8 +75,8 @@ Senior Java Backend Engineer with 7+ years of experience building and modernizin
 - **Cloud and Delivery:** AWS, Docker, Kubernetes, OpenShift, ArgoCD, Jenkins, GitHub Actions, Prometheus, Grafana, OpenTelemetry
 - **Architecture and APIs:** Distributed systems, event-driven architecture, idempotency, failure handling, REST, SOAP, GraphQL, gRPC, OpenAPI
 - **Testing:** JUnit 5, Mockito, integration and load testing, SonarQube
-- **Additional Product Stack:** TypeScript, Node.js, Fastify, React, Next.js, Cloudflare Workers, Supabase, Python, Flask
-- **AI and Product Integrations:** Retrieval-Augmented Generation (RAG), prompt engineering, LLM guardrails, structured LLM outputs, knowledge-base orchestration, OpenRouter, GPT-4o, Claude API, Whisper, Zoom API, Instagram Graph API, Telegram Bot API, Google Drive API
+- **Additional Product Stack:** TypeScript, Node.js, Fastify, React, Next.js, Cloudflare Workers, Supabase, Python, Flask, Telegram Mini Apps
+- **AI and Product Integrations:** Retrieval-Augmented Generation (RAG), prompt engineering, LLM guardrails, structured LLM outputs, OpenRouter, OpenAI API, Claude API, Zoom API, Instagram Graph API, Telegram Bot API, Google Drive API
 
 ## Education
 
