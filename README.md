@@ -20,17 +20,21 @@ Open to remote Senior Java Backend Engineer roles, including B2B contracts.
 
 ### Independent Software Engineer | Client Products and AI Automation | Aug 2025 — Present
 
-- Architected and built **Business Honest**, a CRM and AI sales-enablement platform for a B2B business school: a Fastify/PostgreSQL core service with server-side authentication and RBAC, client and call histories, background jobs, and an auditable error log; a React portal and a Telegram Mini App where managers handle clients, contacts, and call history from their phones.
-- Integrated Zoom: Server-to-Server OAuth, signed webhook verification, idempotent call synchronization with deduplication of repeated events, transcripts, and AI Companion summaries. Implemented AI call classification and on-demand generation of versioned, editable follow-up drafts and structured preparation briefs for the next sales call through OpenRouter, with Telegram delivery and Google Drive adapters.
-- Implemented a Retrieval-Augmented Generation (RAG) pipeline over a versioned PostgreSQL knowledge base: deterministic SQL retrieval, Full-Text Search with Russian lexeme matching, tag-based scoring, and synonym/alias search. Added code-level source verification of generated claims (grounding guardrails), so facts about tariffs, cases, modules, and business mechanics reach the output only from verified records.
-- Built and deployed a multilingual first-line AI bot for **Bali DJ School**'s Instagram Direct on Cloudflare Workers, TypeScript, Supabase, and OpenRouter: knowledge-base answers, seven-step lead qualification, objection handling, and Telegram handoff to a manager. Made it reliable with PGMQ queues, a durable outbox, per-lead concurrency control, bounded retries, and regression tests.
-- Delivered **BuildTrack**, a role-based construction-management platform for the UAE market on Next.js/TypeScript/Supabase: dashboards for clients, contractors, managers, and admins covering tenders, contracts, budgets, work reports, payments, and notifications; integrated a Flask public showcase and admin, and set up a Dockerized two-service deployment.
+- **Business Honest** — a CRM and AI sales-enablement platform for a B2B business school: architected and built a Fastify/PostgreSQL core service with server-side authentication, RBAC, background jobs, and an auditable error log.
+- Built a React portal and a Telegram Mini App where managers handle clients, contacts, and call history.
+- Integrated Zoom: Server-to-Server OAuth, signed webhook verification, idempotent call synchronization with deduplication of repeated events, transcripts, and AI Companion summaries.
+- Implemented AI call classification and OpenRouter-based generation of versioned, editable follow-up drafts and preparation briefs for the next sales call, delivered to Telegram.
+- Built a RAG pipeline over a versioned PostgreSQL knowledge base: SQL retrieval, Full-Text Search with Russian morphology, tag- and synonym-based scoring.
+- Added grounding guardrails: facts about tariffs, cases, and modules reach the LLM output only from verified knowledge-base records.
+- **Bali DJ School** — a multilingual first-line AI bot for Instagram Direct on Cloudflare Workers, Supabase, and OpenRouter: knowledge-base answers, seven-step lead qualification, Telegram handoff to a manager.
+- Made the bot reliable with PGMQ queues, a durable outbox, per-lead concurrency control, bounded retries, and regression tests.
+- **BuildTrack** — a role-based construction-management platform for the UAE market on Next.js/Supabase: tenders, contracts, budgets, work reports, payments; Dockerized two-service deployment.
 
 **Stack:** TypeScript, Node.js, Python, Fastify, React, Next.js, Cloudflare Workers, Flask, PostgreSQL, Supabase, pg-boss, PGMQ, Docker, OpenRouter, Zoom API, Instagram Graph API, Telegram Bot API and Mini Apps, Google Drive API, CI/CD
 
 ### Senior Software Engineer | LINEATE (AdTech) | Jun 2024 — Aug 2025
 
-- Periodically covered for the Team Lead of a 4–6 engineer team, taking ownership of selected responsibilities depending on workload, including technical coordination, architectural decisions, and rollout planning.
+- Periodically covered for the Team Lead of a 4–6 engineer team: technical coordination, architectural decisions, and rollout planning.
 - Led the migration of a legacy C# landing service to Java and Spring WebFlux. The target architecture was designed for an expected 10x increase in both request rate and JSON payload volume; load tests confirmed a 4x throughput increase from 350 to 1,400 RPS.
 - Performed the migration and operated the service across two regions and eight pods; production performance reached 300+ RPS per pod at 48 ms P99. Designed Blue-Green, Rolling Update, and Feature Flag deployment strategies with ArgoCD.
 - Made the architectural decision to use REST instead of gRPC after analyzing migration cost and observability requirements; introduced centralized Redis full-response caching to reduce database load.
